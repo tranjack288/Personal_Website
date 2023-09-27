@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0XMYWVN7YJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0XMYWVN7YJ');
+    </script>
+    <title> Jack Tran's Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Personal Portfolio" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jack Tran" />
+    <link href="images/favicon.ico" rel="icon" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/bio-page.css" rel="stylesheet">
+    <link href="styles/experiences.css" rel="stylesheet">
+    <link href="styles/projects.css" rel="stylesheet">
+    <link href="styles/contact.css" rel="stylesheet">
+    <link href="styles/animations.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script src="./script/main.js"></script>
+</head>
+
+<body class="flex-container column">
+    <!-- top navigation bar -->
+    <header class="flex-container">
+        <!-- <h1>Jack Tran's Website</h1> -->
+        <nav>
+            <ul>
+                <li class="nav"><a href="#home-page"><span>Home</span></a></li>
+                <li class="nav"><a href="#about_me"><span>About Me</span></a></li>
+                <li class="nav"><a href="#experiences"><span>Portfolio</span></a></li>
+                <li class="nav"><a href="#contact_me"><span>Contact Me</span></a></li>
+                <li class="nav"><a href="JS-solutions\styledcrud.html"><span>Feedback</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content of the page-->
+    <main>
+        <section id="home-page" class="flex-container home-page">
+            <section id="title" class="flex-container column">
+                <h1 id="intro">Hey there. I'm<br></h1>
+                <h2 id="fullname"> Jack Tran</h2>
+                <section id="profile-pic-tiny-sec" class="flex-container column">
+                    <img src="./images/profile_pic_tiny.jpg" id="profile-pic-tiny" alt="picture of Jack Tran">
+                </section>
+                <p id="bio">I'm a computer engineering student at UCSD with a curiosity for software - let's code
+                    our way to innovation!</p>
+                <section id="bio-buttons" class="flex-container">
+                    <a class="button" href="./images/Jack_Tran_Resume.pdf" target="_blank"
+                        rel="noopener noreferrer"><span>Resume</span></a>
+                    <a class="button" href="https://github.com/tranjack288" target="_blank"
+                        rel="noopener noreferrer"><span>GitHub</span></a>
+                    <a class="button" href="https://www.linkedin.com/in/jacktrancs/" target="_blank"
+                        rel="noopener noreferrer"><span>LinkedIn</span></a>
+                </section>
+            </section>
+            <section id="profile-pic-sec" class="flex-container column">
+                <img src="./images/profile_pic.jpg"
+                    onerror="this.onerror=null; this.src='CSE-134B-JS\images\profile_pic_tiny.jpg'" id="profile-pic"
+                    alt="picture of Jack Tran">
+            </section>
+
+        </section>
+
+        <hr>
+        <!-- bio page -->
+        <section id="about_me" class="bio-page flex-container column">
+            <h2 id="title">A Glimpse Into My Life</h2>
+            <section class="flex-container">
+                <section id="bio-paragraph" class="flex-container bio-text column">
+                    <p>Hello there! I am a <em>Computer Engineering</em> student at <em>UCSD</em> with an expected
+                        graduation of 2024. My passion for coding drives me to continuously improve my skills and
+                        find new and innovative ways to bring my ideas to life. My ultimate goal is to work for a
+                        leading technology company as a software engineer, where I can leverage my coding skills to
+                        create products that positively impact people's lives. I am deeply invested in developing
+                        solutions that solve real-world problems and have a meaningful impact on society.
+                        I have had experiences with working as a <em>student intern</em> for a research lab at
+                        <em>UCLA</em>, where I created an AI module to help elementary school students learn.
+                    </p>
+                    <p>
+                        Aside from being a coding enthusiast, I am a proud member of <em>Phi Gamma Delta</em>
+                        fraternity. As a <em>community service leader</em> within the fraternity, I am committed to
+                        giving back to society by organizing events
+                        and initiatives that benefit those in need. When I'm not coding, I enjoy a healthy lifestyle
+                        through working out, playing soccer, and occasionally playing video games with my friends.
+                        I also cherish the time and memories with my friends at music festivals.
+                    </p>
+                </section>
+                <section class="section-img flex-container column">
+                    <figure class="flex-container column">
+                        <img id="firstimg" src="images/pic_with_friends_tiny.jpg"
+                            onerror="this.onerror=null; this.src='CSE-134B-JS\images\pic_with_friends1.jpg'"
+                            alt="picture with friends">
+                        <figcaption>A picture of me and my friends hiking in Hawaii</figcaption>
+                    </figure>
+                    <figure class="flex-container column">
+                        <img id="secondimg" src="./images/lifting_resized_tiny.png"
+                            onerror="this.onerror=null; this.src='CSE-134B-JS\images\lifting.jpg'" alt="lifting">
+                        <figcaption>A picture of me deadlifting 455 pounds</figcaption>
+                    </figure>
+                    <figure class="flex-container column">
+                        <img id="thirdimg" src="./images/snowboard_tiny.jfif"
+                            onerror="this.onerror=null; this.src='CSE-134B-JS\images\snowboard.jpg'" alt="snowboard">
+                        <figcaption>A picture my girlfriend and I snowboarding for the first time</figcaption>
+                    </figure>
+                </section>
+            </section>
+
+        </section>
+        <!-- experiences page -->
+        <hr>
+        <section id="experiences" class="exp-page flex-container column">
+            <h1 id="h1-exp">Experiences</h1>
+            <section id="student_intern">
+                <h2>Student Intern | <em>Visual Machines Group at UCLA</em></h2>
+                <h3 id="exp-date">June 2019 to August 2019</h3>
+                <p id="exp-p">I managed a group of high school and undergraduate students in producing a module talking
+                    about artificial intelligence. Our objective as a team was to focus specifically at computer vision
+                    and how AI is used to
+                    develop autonomous driving. The task was to break down the complex topic so that even elementary
+                    school students can comprehend the material. In addition to the module, I had to transcribed the
+                    professor's lecture notes using LaTeX.
+                </p>
+            </section>
+        </section>
+        <hr>
+        <section id="projects" class="project-page flex-container column">
+            <h1 id="title">Projects</h2>
+                <section class="flex-container project-section">
+                    <section class="flex-container column">
+                        <h2>Personal Webpage</h2>
+                        <p id="date">January 2023-Present</p>
+                        <p class="project-p">
+                            I built this website to practice my web development skills and learned frontend and backend
+                            technology from CSE 134B. I used JavaScript to make a blog page where users can leave
+                            messages or share
+                            any interests in my work. I had so much fun exploring the world of web technology so please
+                            check it out!
+                        </p>
+                    </section>
+                    <img id="personal-webpage" src="images/social-media1.png"
+                        onerror="this.onerror=null; this.src='CSE-134B-JS\images\social-media.png'"
+                        alt="Personal Webpage">
+                </section>
+                <section class="flex-container project-section">
+                    <section class="flex-container column">
+                        <h2>San Diego ZooSeeker App</h2>
+                        <p id="date">March 2022-June 2022</p>
+                        <p class="project-p">
+                            I led a team of 6 members in an <em>Agile</em> software process to develop an
+                            <em>Android</em> app that generates a step-by-step guide for users to navigate their trip at
+                            the San Diego Zoo.
+                            I had apply Behavior-Driven development to meet with the client's user stories. I was in
+                            charge of coordinating the team's weekly stand up meetings through our three-weeks sprints.
+                            Additionally, I had to apply multiple design patterns: Strategy, Adapter, Observer, and
+                            Model-View-Presenter to accelerate the development process. JUnit and object mocking were
+                            used to increase test coverage and the
+                            performance of the mobile application by 80% speed.
+                        </p>
+                    </section>
+                    <img id="zoopic" src="images/San-Diego-Zoo-Logo1.png"
+                        onerror="this.onerror=null; this.src='CSE-134B-JS\images\San-Diego-Zoo-Logo.png'"
+                        alt="San Dego Zoo">
+                </section>
+                <section class=" flex-container project-section">
+                    <section class="flex-container column ">
+                        <h2>Workout Planner</h2>
+                        <p id="date">February 2022-March 2022</p>
+                        <p class="project-p">
+                            In this personal project, I wanted to create a basic workout planner where users are able to
+                            input their daily workouts and track their progression in the gym. In this dynamic page, all
+                            the datas
+                            are stored in local storage. The goal of implementing this basic web application was to
+                            explore HTML, CSS, and JavaScript.
+                        </p>
+                    </section>
+                    <img id="workout-img" src="images/workout_planner1.jpg"
+                        onerror="this.onerror=null; this.src='CSE-134B-JS\images\workout_planner.png'"
+                        alt="Workout Planner">
+                </section>
+                <section class=" flex-container project-section">
+                    <section class="flex-container column">
+                        <h2>HIV-Trace</h2>
+                        <p id="date">January 2022-March 2022</p>
+                        <p class="project-p">
+                            I integrated an API of a graph as a tool to find transmission clusters and help prevent the
+                            spread of a virus. The application utilizes a variety of algorithms such as Djkstra's,
+                            Kruskal's, and BFS to traverse between
+                            nodes to find the shortest path given to a certain threshold. This application was developed
+                            using C++ and utilized a variety of data structures such as priority queues, custom
+                            comparators, disjoint sets, and map.
+                        </p>
+                    </section>
+                    <img id="hiv" src="images/hiv_trace1.png"
+                        onerror="this.onerror=null; this.src='CSE-134B-JS\images\hiv_trace.png'" alt="HIV-Trace">
+                </section>
+        </section>
+        <hr>
+        <!-- contact page -->
+        <div id="wrapper" class="animation-container flex-container column">
+            <div id="container">
+                <h1>GET IN TOUCH</h1>
+            </div>
+        </div>
+
+        <section id="contact_me" class="flex-container column ">
+            <!-- <h2>Don't hesitate and reach out!</h2> -->
+            <section class="flex-container">
+                <form method="post" action="contactform.php">
+                    <span class="span-contact">
+                        Don't hesitate and reach out!
+                    </span>
+                    <div class="flex-container column">
+                        <label for="name">Name:</label>
+                        <input class="input2" type="text" id="name" name="name">
+                    </div>
+                    <div class="flex-container column">
+                        <label for="email-form">Email Address:</label>
+                        <input type="email" id="email-form" name="email-form">
+                    </div>
+                    <div class="flex-container column">
+                        <textarea placeholder="Enter a message" cols="50" rows="10"></textarea>
+                        <input type="submit" value="Submit">
+                    </div>
+
+                </form>
+            </section>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <h1>Ways to reach me:</h1>
+        <p>tranjack288@gmail.com</p>
+        <p>(626)-454-9798</p>
+    </footer>
+
+</body>
+
+</html>

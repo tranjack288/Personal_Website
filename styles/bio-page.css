@@ -1,0 +1,61 @@
+/* Bio page */
+.bio-page{
+    width: 80%;
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.2%;    
+    background-color: #e1eedd;
+    
+}
+#about_me h2{
+    font-size: calc(1.5rem + 2.5vw);
+    font-weight: 500;
+    max-width: 60%;
+    margin: 0;
+    border-bottom: .1rem solid black;
+    color: #f0a04b;
+    width: 70%;
+    
+}
+.bio-text{
+    width: 60%;
+    justify-content: space-evenly;
+    padding-left: 2em;
+}
+#bio-paragraph p{
+    font-size: 1.7rem;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin-top: 0;
+    width: 85%;
+    color: #183a1d;
+}
+figure, .section-img{
+    align-items: center;
+}
+figure{
+    margin: 0;
+}
+#firstimg , #secondimg, #thirdimg{
+    height: 80%;
+    width: 70%;
+    border-radius: 50%;
+}
+#thirdimg{
+    height: 70%;
+    
+}
+figcaption{
+    font-weight: 500;
+    color: #943d24 ;
+    
+}
+p em{
+    color: #f6c453;
+    font-style: normal;
+    font-weight: 700;
+}
+

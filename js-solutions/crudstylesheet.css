@@ -1,0 +1,242 @@
+.flex-container {
+    display: flex;
+}
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    background-color: beige;
+}
+
+head {
+    display: none;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.centered {
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    align-items: center;
+    font-size: 6em;
+    letter-spacing: .2em;
+    color: #B2B5E0;
+    border-bottom: 2px solid orange;
+}
+
+.button {
+    display: block;
+    width: 8em;
+    height: 2.5em;
+    font-size: 1em;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #F9B872;
+    letter-spacing: .2em;
+    text-align: center;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    transition: all .35s;
+    cursor: pointer;
+    align-items: center;
+    
+}
+
+.button span {
+    position: relative;
+    z-index: 2;
+}
+
+.button:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #B6E1E7;
+    transition: all .35s;
+}
+
+.button:hover {
+    color: black;
+}
+
+.button:hover:after {
+    width: 100%;
+}
+
+.button1 {
+    display: inline-block;
+    width: 8em;
+    height: 2.5em;
+    font-size: 1em;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #F9B872;
+    letter-spacing: .2em;
+    text-align: center;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    transition: all .35s;
+    cursor: pointer;
+    align-items: center;
+}
+
+.button1 span {
+    position: relative;
+    z-index: 2;
+}
+
+.button1:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #B6E1E7;
+    transition: all .35s;
+}
+
+.button1:hover {
+    color: black;
+}
+
+.button1:hover:after {
+    width: 100%;
+}
+
+#list-items li {
+    list-style-type: none;
+    justify-items: center;
+    align-items: center;
+    width: 50vw;
+    border: 1px solid #F9B872;
+    padding: 2.5%;
+    margin-bottom: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#list-items h2 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#list-items li p {
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+/* styling the delete dialog */
+.delete-dialog {
+    background-color: #F9B872;
+    width: 20%;
+    height: 20%;
+}
+
+.delete-dialog>h2 {
+    font-size: 1.5em;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
+
+.button-div {
+
+    border-radius: 0%;
+}
+
+#delete_button,
+#cancel_delete_button {
+    font-size: 1em;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    max-width: 8em;
+    width: 50%;
+    background-color: beige;
+}
+
+#delete_button>span,
+#cancel_delete_button>span {
+    display: flex;
+}
+
+/* Styling edit and add dialog */
+.request-dialog, .edit-dialog {
+    background-color: #F9B872;
+    width: 30%;
+    height: 50%;
+    max-height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    overflow-y: auto;
+  }
+  
+  .request-dialog input, .edit-dialog input {
+    margin: 1%;
+    padding: 2%;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  
+  .request-dialog label, .edit-dialog label {
+    font-size: 1.2em;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .request-dialog button, .edit-dialog button {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 0.2em 0.4em rgba(0, 0, 0, 0.2);
+    background-color: #FFF;
+    color: #F9B872;
+  }
+  
+  .request-dialog button:hover, .edit-dialog button:hover {
+    background-color: #F9B872;
+    color: #FFF;
+  }
+  
+  
+  
+
+  

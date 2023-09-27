@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <script src="/node_modules/dompurify/dist/purify.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.1/dist/purify.min.js"></script>
+    <meta charset="UTF-8">
+    <title>nativedialogs</title>
+    <button id="Alert">
+        Alert
+    </button>
+    <button id="Confirm">
+        Confirm
+    </button>
+
+    <button id="Prompt">
+        Prompt
+    </button>
+    <button id="Safer_Prompt">
+        Safer Prompt
+    </button>
+    <div id="result"></div>
+
+    <script>
+        const alert_element = document.getElementById("Alert");
+        alert_element.addEventListener("click", () => {
+            alert("Alert pressed");
+        });
+        const confirm_elem = document.getElementById("Confirm");
+        confirm_elem.addEventListener("click", my_confirm);
+        function my_confirm() {
+            let text = confirm("Do you confirm this?");
+            document.getElementById("result").innerHTML = `The value returned by the confirm method is :${text}`;
+        }
+        const prompt_elem = document.getElementById("Prompt");
+        prompt_elem.addEventListener("click", my_prompt);
+        function my_prompt() {
+            setTimeout(() => {
+                let message = prompt("What is your name?");
+                if (message === null || message === "") {
+                    document.getElementById("result").innerHTML = `User didn't enter anything`;
+                }
+                else {
+                    document.getElementById("result").innerHTML = `Prompt result : ${message}`;
+                }
+            }, 0);
+        }
+
+        const safe_elem = document.getElementById("Safer_Prompt");
+        safe_elem.addEventListener("click", my_prompt_safe);
+        function my_prompt_safe() {
+            setTimeout(() => {
+            let dirtymessage = prompt("What is your name?");
+            let message = DOMPurify.sanitize(dirtymessage);
+            if (message === null || message == "") {
+                document.getElementById("result").innerHTML = `User didn't enter anything`;
+            }
+            else {
+                document.getElementById("result").innerHTML = `Prompt result : ${message}`;
+            }
+            }, 0);
+        }
+    </script>
+</head>
+</html>

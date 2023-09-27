@@ -1,0 +1,74 @@
+.project-page{
+    width: 80%;
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    padding: 1.2%;    
+    background-color: #e1eedd;
+    
+}
+.project-section{
+    
+    width: 80%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left:2em ;
+}
+
+#projects h1 {
+    font-size: calc(1.5rem + 2.5vw);
+    font-weight: 500;
+    max-width: 60%;
+    margin: 0;
+    border-bottom: .1rem solid black;
+    color: #f0a04b;
+    width: 70%;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    font-weight: 400;
+    color: #943d24;
+   
+}
+#date{
+    font-size: 1.7em;
+    font-style: normal;
+    font-weight: 300;
+    margin-top:-.75em;
+    color: #e1a7bc;
+    
+}
+.project-p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.3em;
+    margin-top: 0;
+    width: 70%;
+    color: #183a1d;
+}
+#personal-webpage{
+    width: 30%;
+}
+#zoopic {
+    width: 20%;
+}
+ .project-section img{
+    width: 10%;
+    border: 1px solid white;
+    border-radius: 50%;
+    object-fit: contain;
+    align-items: center;
+}
+#workout-img{
+    width: 20%;
+}
+#hiv{
+    width: 15%;
+    
+    border: 0;
+}
